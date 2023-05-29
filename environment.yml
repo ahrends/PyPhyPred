@@ -1,0 +1,24 @@
+name: pyphypred
+
+channels:
+  - defaults
+  - conda-forge
+
+# Quotes needed with the following characters: > < | *
+# https://conda.io/docs/_downloads/conda-cheatsheet.pdf
+dependencies:
+  - "python>=3.6"
+  - numpy
+  - scipy
+  - ipython
+  - joblib
+  - "matplotlib>=3.1"
+  - "h5py>=2"
+  - "jinja2>=2.7"
+  - "nibabel>=3.2"
+  - "scikit-learn>=0.23"
+  - pip
+  - pip:
+    - cifti
+    - pyglmnet
+    - ptitprince
